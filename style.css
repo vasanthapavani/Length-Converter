@@ -1,0 +1,45 @@
+body{
+    background-image:url("../assets/bg2.webp");
+    font-size: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    background-position: center;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.tool-container{
+    margin-left:65%;
+    margin-top:8%;
+    padding:19px;
+    border:2px solid white;
+    border-radius:10px;
+    font-size:25px;
+}
+.tool-container input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border:2px solid white;
+    border-radius:10px;
+    font-size:25px;
+}
+.tool-container .b1{
+    width:36%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border:2px solid rgb(255, 255, 255);
+    border-radius:10px;
+    font-size:24px;
+}
+.tool-container .b2{
+    width:46%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border:2px solid rgb(255, 255, 255);
+    border-radius:10px;
+    font-size:24px;
+}

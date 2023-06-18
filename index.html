@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Length Converter</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+     <h1 class="title m-2 mt-4 text-center text-white text-bold">Length Converter</h1>
+     <!-- Length Converter Tool-->
+    <div class="container-fluid tool-container text-center text-white col-lg-5 col-md-8 col-sm-10">
+        <div class="input-group m-3">
+            <div class="input-label m-2">
+                <label for="fromUnit">From:</label>
+            </div>
+            <select class="select-group m-2" id="fromUnit">
+                <option selected value="Millimeter">Millimeter</option>
+                <option value="Centimeter">Centimeter</option>
+                <option value="Decimeter">Decimeter</option>
+                <option value="Meter">Meter</option>
+                <option value="Kilometer">Kilometer</option>
+                <option value="Foot">Foot</option>
+                <option value="Inch">Inch</option>
+                <option value="Mile">Mile</option>
+                <option value="Yard">Yard</option>
+            </select>
+            <input placeholder="Input Length" id="fromLength" type="number" name="from-length" min="0" class="tool-input-feild col-4 m-2">
+        </div>
+        <div class="input-group m-3 mx-auto">
+            <div class="input-label m-3">
+                <label for="toUnit">To:</label>
+            </div>
+            <select class="select-group m-2" id="toUnit">
+                <option value="Millimeter">Millimeter</option>
+                <option selected value="Centimeter">Centimeter</option>
+                <option value="Decimeter">Decimeter</option>
+                <option value="Meter">Meter</option>
+                <option value="Kilometer">Kilometer</option>
+                <option value="Foot">Foot</option>
+                <option value="Inch">Inch</option>
+                <option value="Mile">Mile</option>
+                <option value="Yard">Yard</option>
+            </select>
+            <input readonly placeholder="Output" id="outputLength" type="number" name="to-temperature" min="0" class="input-feild col-4 m-2">
+        </div>
+        <div class="button-group text-center mx-auto">
+            <button onclick="Resettool()" class="btn btn-outline-dark btn-lg m-4 b1">Reset</button>
+            <button onclick="CalculateLength()" class="btn btn-outline-dark btn-lg m-4 b2">Calculate</button>
+        </div>
+    </div>
+     <script src="./js/script.js"></script>
+</body>
+</html>
